@@ -158,6 +158,8 @@
       <!-- Category tabs -->
       <div class="menu-tabs" role="tablist">
         <button class="menu-tab active" data-category="pizzaer" role="tab">🍕 Pizzaer</button>
+        <button class="menu-tab" data-category="special" role="tab">🌶️ Salatpizza & Mexicansk</button>
+        <button class="menu-tab" data-category="indbagt" role="tab">🫔 Indbagt Pizza</button>
         <button class="menu-tab" data-category="menupakker" role="tab">🥙 Menupakker</button>
         <button class="menu-tab" data-category="burgere" role="tab">🍔 Burgere</button>
         <button class="menu-tab" data-category="andet" role="tab">🥗 Øvrige retter</button>
@@ -167,333 +169,497 @@
       <!-- Menu items grid -->
       <div class="menu-grid" id="menu-grid">
 
-        <!-- PIZZAER -->
+        <!-- ===== PIZZAER (Alm. / Familie) ===== -->
         <div class="menu-item" data-category="pizzaer">
-          <img class="menu-item__img" src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=120&h=120&q=80" alt="Margherita pizza" loading="lazy" />
-          <div class="menu-item__info">
-            <h3>Margherita</h3>
-            <p>Tomatsauce, mozzarella, frisk basilikum</p>
-          </div>
-          <div class="menu-item__price">
-            <span>75 kr</span>
-            <small>Familie 120 kr</small>
-          </div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=120&h=120&q=80" alt="Margherita" loading="lazy" />
+          <div class="menu-item__info"><h3>1. Margherita</h3><p>Tomat, ost</p></div>
+          <div class="menu-item__price"><span>63,-</span><small>Familie 120,-</small></div>
         </div>
 
         <div class="menu-item" data-category="pizzaer">
-          <img class="menu-item__img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=120&h=120&q=80" alt="Pepperoni pizza" loading="lazy" />
-          <div class="menu-item__info">
-            <h3>Pepperoni</h3>
-            <p>Tomatsauce, mozzarella, pepperoni</p>
-          </div>
-          <div class="menu-item__price">
-            <span>85 kr</span>
-            <small>Familie 135 kr</small>
-          </div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=120&h=120&q=80" alt="Quattro Formaggi" loading="lazy" />
+          <div class="menu-item__info"><h3>1B. Quattro Formaggi</h3><p>Fire slags ost</p></div>
+          <div class="menu-item__price"><span>82,-</span><small>Familie 140,-</small></div>
         </div>
 
         <div class="menu-item" data-category="pizzaer">
-          <img class="menu-item__img" src="https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?auto=format&fit=crop&w=120&h=120&q=80" alt="Hawaii pizza" loading="lazy" />
-          <div class="menu-item__info">
-            <h3>Hawaii</h3>
-            <p>Tomatsauce, mozzarella, skinke, ananas</p>
-          </div>
-          <div class="menu-item__price">
-            <span>85 kr</span>
-            <small>Familie 135 kr</small>
-          </div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=120&h=120&q=80" alt="Vesuvio" loading="lazy" />
+          <div class="menu-item__info"><h3>2. Vesuvio</h3><p>Skinke</p></div>
+          <div class="menu-item__price"><span>72,-</span><small>Familie 130,-</small></div>
         </div>
 
         <div class="menu-item" data-category="pizzaer">
-          <img class="menu-item__img" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=120&h=120&q=80" alt="Capricciosa pizza" loading="lazy" />
-          <div class="menu-item__info">
-            <h3>Capricciosa</h3>
-            <p>Tomatsauce, mozzarella, skinke, champignon</p>
-          </div>
-          <div class="menu-item__price">
-            <span>85 kr</span>
-            <small>Familie 135 kr</small>
-          </div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?auto=format&fit=crop&w=120&h=120&q=80" alt="Hawaii" loading="lazy" />
+          <div class="menu-item__info"><h3>3. Hawaii</h3><p>Skinke, ananas</p></div>
+          <div class="menu-item__price"><span>74,-</span><small>Familie 130,-</small></div>
         </div>
 
         <div class="menu-item" data-category="pizzaer">
-          <img class="menu-item__img" src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=120&h=120&q=80" alt="Quattro Formaggi pizza" loading="lazy" />
-          <div class="menu-item__info">
-            <h3>Quattro Formaggi</h3>
-            <p>Flødesauce, fire slags ost: mozzarella, parmesan, gorgonzola, gouda</p>
-          </div>
-          <div class="menu-item__price">
-            <span>90 kr</span>
-            <small>Familie 145 kr</small>
-          </div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=120&h=120&q=80" alt="Ci Solo Mio" loading="lazy" />
+          <div class="menu-item__info"><h3>4. Ci Solo Mio</h3><p>Ost, skinke, bacon</p></div>
+          <div class="menu-item__price"><span>74,-</span><small>Familie 135,-</small></div>
+        </div>
+
+        <div class="menu-item" data-category="pizzaer">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=120&h=120&q=80" alt="Capricciosa" loading="lazy" />
+          <div class="menu-item__info"><h3>5. Capricciosa</h3><p>Skinke, champignon</p></div>
+          <div class="menu-item__price"><span>74,-</span><small>Familie 135,-</small></div>
+        </div>
+
+        <div class="menu-item" data-category="pizzaer">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=120&h=120&q=80" alt="Italiano" loading="lazy" />
+          <div class="menu-item__info"><h3>6. Italiano</h3><p>Løg, kødsauce</p></div>
+          <div class="menu-item__price"><span>74,-</span><small>Familie 135,-</small></div>
+        </div>
+
+        <div class="menu-item" data-category="pizzaer">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=120&h=120&q=80" alt="Amerikaner" loading="lazy" />
+          <div class="menu-item__info"><h3>7. Amerikaner</h3><p>Hakket oksekød, chili</p></div>
+          <div class="menu-item__price"><span>72,-</span><small>Familie 130,-</small></div>
+        </div>
+
+        <div class="menu-item" data-category="pizzaer">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=120&h=120&q=80" alt="Pepperoni" loading="lazy" />
+          <div class="menu-item__info"><h3>8. Pepperoni</h3><p>Pepperoni</p></div>
+          <div class="menu-item__price"><span>72,-</span><small>Familie 130,-</small></div>
+        </div>
+
+        <div class="menu-item" data-category="pizzaer">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?auto=format&fit=crop&w=120&h=120&q=80" alt="Hys Pizza" loading="lazy" />
+          <div class="menu-item__info"><h3>9. Hys Pizza</h3><p>Skinke, gorgonzola, pepperoni</p></div>
+          <div class="menu-item__price"><span>82,-</span><small>Familie 140,-</small></div>
+        </div>
+
+        <div class="menu-item" data-category="pizzaer">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=120&h=120&q=80" alt="Jamaica" loading="lazy" />
+          <div class="menu-item__info"><h3>10. Jamaica</h3><p>Skinke, pepperoni</p></div>
+          <div class="menu-item__price"><span>74,-</span><small>Familie 135,-</small></div>
+        </div>
+
+        <div class="menu-item" data-category="pizzaer">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=120&h=120&q=80" alt="Mr. Pizza" loading="lazy" />
+          <div class="menu-item__info"><h3>11. Mr. Pizza</h3><p>Skinke, hk. oksekød, paprika, pepperoni, champignon</p></div>
+          <div class="menu-item__price"><span>85,-</span><small>Familie 155,-</small></div>
+        </div>
+
+        <div class="menu-item" data-category="pizzaer">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=120&h=120&q=80" alt="Helini" loading="lazy" />
+          <div class="menu-item__info"><h3>12. Helini</h3><p>Cocktailpølser, bacon, pepperoni</p></div>
+          <div class="menu-item__price"><span>75,-</span><small>Familie 145,-</small></div>
+        </div>
+
+        <div class="menu-item" data-category="pizzaer">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=120&h=120&q=80" alt="Vegetariana" loading="lazy" />
+          <div class="menu-item__info"><h3>13. Vegetariana</h3><p>Champignon, paprika, løg, oliven, ananas</p></div>
+          <div class="menu-item__price"><span>74,-</span><small>Familie 135,-</small></div>
+        </div>
+
+        <div class="menu-item" data-category="pizzaer">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?auto=format&fit=crop&w=120&h=120&q=80" alt="Muzas" loading="lazy" />
+          <div class="menu-item__info"><h3>14. Muzas</h3><p>Kylling, løg, paprika</p></div>
+          <div class="menu-item__price"><span>74,-</span><small>Familie 135,-</small></div>
+        </div>
+
+        <div class="menu-item" data-category="pizzaer">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=120&h=120&q=80" alt="Rhodos" loading="lazy" />
+          <div class="menu-item__info"><h3>15. Rhodos</h3><p>Kylling, bacon</p></div>
+          <div class="menu-item__price"><span>74,-</span><small>Familie 135,-</small></div>
+        </div>
+
+        <div class="menu-item" data-category="pizzaer">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=120&h=120&q=80" alt="Grand" loading="lazy" />
+          <div class="menu-item__info"><h3>16. Grand</h3><p>Kylling, bacon, pesto, kartofler</p></div>
+          <div class="menu-item__price"><span>75,-</span><small>Familie 140,-</small></div>
+        </div>
+
+        <div class="menu-item" data-category="pizzaer">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=120&h=120&q=80" alt="Bacon pizza" loading="lazy" />
+          <div class="menu-item__info"><h3>17. Bacon</h3><p>Bacon, løg, paprika, æg</p></div>
+          <div class="menu-item__price"><span>74,-</span><small>Familie 135,-</small></div>
+        </div>
+
+        <div class="menu-item" data-category="pizzaer">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?auto=format&fit=crop&w=120&h=120&q=80" alt="Hagi" loading="lazy" />
+          <div class="menu-item__info"><h3>18. Hagi</h3><p>Løg, kebab, bacon, pepperoni</p></div>
+          <div class="menu-item__price"><span>82,-</span><small>Familie 145,-</small></div>
+        </div>
+
+        <div class="menu-item" data-category="pizzaer">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=120&h=120&q=80" alt="Matador" loading="lazy" />
+          <div class="menu-item__info"><h3>19. Matador</h3><p>Løg, kebab, bearnaise</p></div>
+          <div class="menu-item__price"><span>75,-</span><small>Familie 140,-</small></div>
+        </div>
+
+        <div class="menu-item" data-category="pizzaer">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=120&h=120&q=80" alt="Milano" loading="lazy" />
+          <div class="menu-item__info"><h3>20. Milano</h3><p>Kebab, champignon, gorgonzola</p></div>
+          <div class="menu-item__price"><span>75,-</span><small>Familie 140,-</small></div>
+        </div>
+
+        <div class="menu-item" data-category="pizzaer">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=120&h=120&q=80" alt="San Remo" loading="lazy" />
+          <div class="menu-item__info"><h3>21. San Remo</h3><p>Hakket oksekød, bacon, cocktailpølser</p></div>
+          <div class="menu-item__price"><span>75,-</span><small>Familie 140,-</small></div>
+        </div>
+
+        <div class="menu-item" data-category="pizzaer">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?auto=format&fit=crop&w=120&h=120&q=80" alt="Atik Special" loading="lazy" />
+          <div class="menu-item__info"><h3>22. Atik Special</h3><p>Kebab, paprika, tomater, gorgonzola, champignon</p></div>
+          <div class="menu-item__price"><span>82,-</span><small>Familie 140,-</small></div>
+        </div>
+
+        <div class="menu-item" data-category="pizzaer">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=120&h=120&q=80" alt="Marinara" loading="lazy" />
+          <div class="menu-item__info"><h3>23. Marinara</h3><p>Rejer, tun</p></div>
+          <div class="menu-item__price"><span>75,-</span><small>Familie 140,-</small></div>
+        </div>
+
+        <div class="menu-item" data-category="pizzaer">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=120&h=120&q=80" alt="Torino" loading="lazy" />
+          <div class="menu-item__info"><h3>24. Torino</h3><p>Kebab, rejer, gorgonzola, chili, hvidløg</p></div>
+          <div class="menu-item__price"><span>82,-</span><small>Familie 145,-</small></div>
         </div>
 
         <div class="menu-item menu-item--popular" data-category="pizzaer">
-          <img class="menu-item__img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=120&h=120&q=80" alt="Mexicana pizza" loading="lazy" />
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=120&h=120&q=80" alt="Saranda pizza" loading="lazy" />
           <div class="menu-item__info">
-            <div class="menu-item__name-row">
-              <h3>Mexicana</h3>
-              <span class="menu-item__badge">Populær</span>
-            </div>
-            <p>Tomatsauce, mozzarella, hakket oksekød, jalapeños, løg, peberfrugt</p>
+            <div class="menu-item__name-row"><h3>25. Saranda</h3><span class="menu-item__badge">Populær</span></div>
+            <p>Kebab, paprika, champignon</p>
           </div>
-          <div class="menu-item__price">
-            <span>90 kr</span>
-            <small>Familie 145 kr</small>
-          </div>
+          <div class="menu-item__price"><span>75,-</span><small>Familie 145,-</small></div>
         </div>
 
         <div class="menu-item" data-category="pizzaer">
-          <img class="menu-item__img" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=120&h=120&q=80" alt="Salatpizza" loading="lazy" />
-          <div class="menu-item__info">
-            <h3>Salatpizza</h3>
-            <p>Tomatsauce, mozzarella, toppet med frisk salat, tomat og dressing</p>
-          </div>
-          <div class="menu-item__price">
-            <span>90 kr</span>
-            <small>Familie 145 kr</small>
-          </div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=120&h=120&q=80" alt="Rucola Pizza" loading="lazy" />
+          <div class="menu-item__info"><h3>26. Rucola Pizza</h3><p>Rucola, kylling, pesto</p></div>
+          <div class="menu-item__price"><span>75,-</span><small>Familie 145,-</small></div>
         </div>
 
         <div class="menu-item" data-category="pizzaer">
-          <img class="menu-item__img" src="https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?auto=format&fit=crop&w=120&h=120&q=80" alt="Indbagt pizza" loading="lazy" />
-          <div class="menu-item__info">
-            <h3>Indbagt Pizza</h3>
-            <p>Din valgte pizza foldet og bagt lukket – sprød og saftig indeni</p>
-          </div>
-          <div class="menu-item__price">
-            <span>95 kr</span>
-            <small>Familie 150 kr</small>
-          </div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=120&h=120&q=80" alt="Parma Skinke" loading="lazy" />
+          <div class="menu-item__info"><h3>27. Parma Skinke</h3><p>Gorgonzola, parmaskinke, rucola, pesto</p></div>
+          <div class="menu-item__price"><span>75,-</span><small>Familie 145,-</small></div>
         </div>
 
         <div class="menu-item" data-category="pizzaer">
-          <img class="menu-item__img" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=120&h=120&q=80" alt="Vesuvio pizza" loading="lazy" />
-          <div class="menu-item__info">
-            <h3>Vesuvio</h3>
-            <p>Tomatsauce, mozzarella, skinke, æg, champignon</p>
-          </div>
-          <div class="menu-item__price">
-            <span>88 kr</span>
-            <small>Familie 140 kr</small>
-          </div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=120&h=120&q=80" alt="Amore" loading="lazy" />
+          <div class="menu-item__info"><h3>28. Amore</h3><p>Pepperoni, oliven, paprika</p></div>
+          <div class="menu-item__price"><span>75,-</span><small>Familie 140,-</small></div>
         </div>
 
         <div class="menu-item" data-category="pizzaer">
-          <img class="menu-item__img" src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=120&h=120&q=80" alt="Tonno pizza" loading="lazy" />
-          <div class="menu-item__info">
-            <h3>Tonno</h3>
-            <p>Tomatsauce, mozzarella, tun, løg, kapers</p>
-          </div>
-          <div class="menu-item__price">
-            <span>88 kr</span>
-            <small>Familie 140 kr</small>
-          </div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=120&h=120&q=80" alt="Spinat" loading="lazy" />
+          <div class="menu-item__info"><h3>29. Spinat</h3><p>Tomat, fetaost, friske tomater, kartofler</p></div>
+          <div class="menu-item__price"><span>82,-</span><small>Familie 145,-</small></div>
         </div>
 
-        <div class="menu-item" data-category="pizzaer">
-          <img class="menu-item__img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=120&h=120&q=80" alt="Kebabpizza" loading="lazy" />
-          <div class="menu-item__info">
-            <h3>Kebabpizza</h3>
-            <p>Tomatsauce, mozzarella, kebabkød, løg, peberfrugt, dressing</p>
-          </div>
-          <div class="menu-item__price">
-            <span>92 kr</span>
-            <small>Familie 148 kr</small>
-          </div>
+        <!-- ===== SALATPIZZA & MEXICANSK ===== -->
+        <div class="menu-item" data-category="special">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=120&h=120&q=80" alt="Skinke Salatpizza" loading="lazy" />
+          <div class="menu-item__info"><h3>30. Skinke – Salatpizza</h3><p>Med salat og dressing</p></div>
+          <div class="menu-item__price"><span>80,-</span><small>Familie 145,-</small></div>
         </div>
 
-        <div class="menu-item menu-item--popular" data-category="pizzaer">
-          <img class="menu-item__img" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=120&h=120&q=80" alt="Saranda Special pizza" loading="lazy" />
-          <div class="menu-item__info">
-            <div class="menu-item__name-row">
-              <h3>Saranda Special</h3>
-              <span class="menu-item__badge">Husets favorit</span>
-            </div>
-            <p>Tomatsauce, mozzarella, skinke, champignon, pepperoni, peberfrugt, oliven</p>
-          </div>
-          <div class="menu-item__price">
-            <span>98 kr</span>
-            <small>Familie 158 kr</small>
-          </div>
+        <div class="menu-item" data-category="special">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=120&h=120&q=80" alt="Kebab Salatpizza" loading="lazy" />
+          <div class="menu-item__info"><h3>31. Kebab – Salatpizza</h3><p>Med salat og dressing</p></div>
+          <div class="menu-item__price"><span>80,-</span><small>Familie 145,-</small></div>
         </div>
 
-        <!-- MENUPAKKER -->
+        <div class="menu-item" data-category="special">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=120&h=120&q=80" alt="Pepperoni Salatpizza" loading="lazy" />
+          <div class="menu-item__info"><h3>32. Pepperoni – Salatpizza</h3><p>Med salat og dressing</p></div>
+          <div class="menu-item__price"><span>80,-</span><small>Familie 145,-</small></div>
+        </div>
+
+        <div class="menu-item" data-category="special">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=120&h=120&q=80" alt="Kylling Salatpizza" loading="lazy" />
+          <div class="menu-item__info"><h3>33. Kylling – Salatpizza</h3><p>Med salat og dressing</p></div>
+          <div class="menu-item__price"><span>80,-</span><small>Familie 145,-</small></div>
+        </div>
+
+        <div class="menu-item" data-category="special">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=120&h=120&q=80" alt="Falafel Salatpizza" loading="lazy" />
+          <div class="menu-item__info"><h3>34. Falafel – Salatpizza</h3><p>Med salat og dressing</p></div>
+          <div class="menu-item__price"><span>80,-</span><small>Familie 145,-</small></div>
+        </div>
+
+        <div class="menu-item" data-category="special">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=120&h=120&q=80" alt="Amigo Mexicansk" loading="lazy" />
+          <div class="menu-item__info"><h3>35. Amigo – Mexicansk</h3><p>Tomat, ost, kebab, gorgonzola, jalapeños</p></div>
+          <div class="menu-item__price"><span>80,-</span><small>Familie 145,-</small></div>
+        </div>
+
+        <div class="menu-item" data-category="special">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=120&h=120&q=80" alt="Acalpulco Mexicansk" loading="lazy" />
+          <div class="menu-item__info"><h3>36. Acalpulco – Mexicansk</h3><p>Tomat, ost, kødsauce, pepperoni, jalapeños</p></div>
+          <div class="menu-item__price"><span>80,-</span><small>Familie 145,-</small></div>
+        </div>
+
+        <div class="menu-item" data-category="special">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=120&h=120&q=80" alt="New Mexico Mexicansk" loading="lazy" />
+          <div class="menu-item__info"><h3>37. New Mexico – Mexicansk</h3><p>Tomat, ost, kylling, bacon, jalapeños</p></div>
+          <div class="menu-item__price"><span>80,-</span><small>Familie 145,-</small></div>
+        </div>
+
+        <div class="menu-item" data-category="special">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=120&h=120&q=80" alt="Nazca Mexicansk" loading="lazy" />
+          <div class="menu-item__info"><h3>38. Nazca – Mexicansk</h3><p>Tomat, ost, skinke, kebab, gorgonzola, jalapeños</p></div>
+          <div class="menu-item__price"><span>80,-</span><small>Familie 145,-</small></div>
+        </div>
+
+        <div class="menu-item" data-category="special">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=120&h=120&q=80" alt="Garip Mexicansk" loading="lazy" />
+          <div class="menu-item__info"><h3>39. Garip – Mexicansk</h3><p>Pepperoni, hakkeked, paprika, chili, hvidløg, jalapeños</p></div>
+          <div class="menu-item__price"><span>80,-</span><small>Familie 145,-</small></div>
+        </div>
+
+        <!-- ===== INDBAGT PIZZA ===== -->
+        <div class="menu-item" data-category="indbagt">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?auto=format&fit=crop&w=120&h=120&q=80" alt="Calzone" loading="lazy" />
+          <div class="menu-item__info"><h3>42. Calzone</h3><p>Tomat, ost, skinke, ost</p></div>
+          <div class="menu-item__price"><span>72,-</span></div>
+        </div>
+
+        <div class="menu-item" data-category="indbagt">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1551183053-bf91798d773e?auto=format&fit=crop&w=120&h=120&q=80" alt="Bolognese Pizza" loading="lazy" />
+          <div class="menu-item__info"><h3>43. Bolognese Pizza</h3><p>Spaghetti, kødsauce</p></div>
+          <div class="menu-item__price"><span>75,-</span></div>
+        </div>
+
+        <div class="menu-item" data-category="indbagt">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=120&h=120&q=80" alt="Cihan Pizza" loading="lazy" />
+          <div class="menu-item__info"><h3>44. Cihan Pizza</h3><p>Tomat, ost, kebab, gorgonzola, paprika, chili, hvidløg</p></div>
+          <div class="menu-item__price"><span>80,-</span></div>
+        </div>
+
+        <div class="menu-item menu-item--popular" data-category="indbagt">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?auto=format&fit=crop&w=120&h=120&q=80" alt="UFO" loading="lazy" />
+          <div class="menu-item__info">
+            <div class="menu-item__name-row"><h3>45. UFO</h3><span class="menu-item__badge">Populær</span></div>
+            <p>Skinke, pepperoni, champignon</p>
+          </div>
+          <div class="menu-item__price"><span>85,-</span></div>
+        </div>
+
+        <!-- ===== MENUPAKKER ===== -->
         <div class="menu-item" data-category="menupakker">
           <img class="menu-item__img" src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=120&h=120&q=80" alt="Pitabrød Menu" loading="lazy" />
-          <div class="menu-item__info">
-            <h3>Pitabrød Menu</h3>
-            <p>Pitabrød med valgfrit fyld, pommes frites og dåsesodavand</p>
-          </div>
-          <div class="menu-item__price">
-            <span>85 kr</span>
-          </div>
+          <div class="menu-item__info"><h3>Pitabrød Menu</h3><p>Pitabrød med pommes frites og en dåsesodavand</p></div>
+          <div class="menu-item__price"><span>95,-</span></div>
         </div>
 
         <div class="menu-item menu-item--popular" data-category="menupakker">
           <img class="menu-item__img" src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=120&h=120&q=80" alt="Dürüm Menu" loading="lazy" />
           <div class="menu-item__info">
-            <div class="menu-item__name-row">
-              <h3>Dürüm Menu</h3>
-              <span class="menu-item__badge">Bestseller</span>
-            </div>
-            <p>Hjemmelavet dürüm rulle med valgfrit fyld, pommes frites og dåsesodavand</p>
+            <div class="menu-item__name-row"><h3>Dürüm Menu</h3><span class="menu-item__badge">Bestseller</span></div>
+            <p>Dürüm rulle med pommes frites og en dåsesodavand</p>
           </div>
-          <div class="menu-item__price">
-            <span>90 kr</span>
-          </div>
+          <div class="menu-item__price"><span>110,-</span></div>
         </div>
 
         <div class="menu-item" data-category="menupakker">
           <img class="menu-item__img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=120&h=120&q=80" alt="Burger Menu" loading="lazy" />
-          <div class="menu-item__info">
-            <h3>Burger Menu</h3>
-            <p>Husets burger (ca. 200 g), pommes frites og dåsesodavand</p>
-          </div>
-          <div class="menu-item__price">
-            <span>95 kr</span>
-          </div>
+          <div class="menu-item__info"><h3>Burger Menu</h3><p>Burger med pommes frites og en dåsesodavand</p></div>
+          <div class="menu-item__price"><span>99,-</span></div>
         </div>
 
         <div class="menu-item" data-category="menupakker">
           <img class="menu-item__img" src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=120&h=120&q=80" alt="Sandwich Menu" loading="lazy" />
-          <div class="menu-item__info">
-            <h3>Sandwich Menu</h3>
-            <p>Frisk sandwich med valgfrit fyld, pommes frites og dåsesodavand</p>
-          </div>
-          <div class="menu-item__price">
-            <span>90 kr</span>
-          </div>
+          <div class="menu-item__info"><h3>Sandwich Menu</h3><p>Sandwich med pommes frites og dåsesodavand</p></div>
+          <div class="menu-item__price"><span>110,-</span></div>
         </div>
 
-        <!-- BURGERE -->
+        <!-- ===== BURGERE ===== -->
+        <div class="menu-item" data-category="burgere">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=120&h=120&q=80" alt="Clasic Burger" loading="lazy" />
+          <div class="menu-item__info"><h3>60. Clasic Burger 150 gr.</h3><p>Serveres med frisk salat, tomater, agurker og løg</p></div>
+          <div class="menu-item__price"><span>50,-</span></div>
+        </div>
+
+        <div class="menu-item" data-category="burgere">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=120&h=120&q=80" alt="Cheese Burger" loading="lazy" />
+          <div class="menu-item__info"><h3>61. Cheese Burger 150 gr.</h3><p>Serveres med frisk salat, tomater, agurker og løg</p></div>
+          <div class="menu-item__price"><span>52,-</span></div>
+        </div>
+
+        <div class="menu-item" data-category="burgere">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=120&h=120&q=80" alt="Bacon Burger" loading="lazy" />
+          <div class="menu-item__info"><h3>62. Bacon Burger 150 gr.</h3><p>Serveres med frisk salat, tomater, agurker og løg</p></div>
+          <div class="menu-item__price"><span>54,-</span></div>
+        </div>
+
+        <div class="menu-item" data-category="burgere">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=120&h=120&q=80" alt="Dobbelt Bacon Cheese Burger" loading="lazy" />
+          <div class="menu-item__info"><h3>64. Dobbelt Bacon Cheese Burger 300 gr.</h3><p>Serveres med frisk salat, tomater, agurker og løg</p></div>
+          <div class="menu-item__price"><span>74,-</span></div>
+        </div>
+
+        <div class="menu-item" data-category="burgere">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=120&h=120&q=80" alt="Dobbelt Burger" loading="lazy" />
+          <div class="menu-item__info"><h3>65. Dobbelt Burger 300 gr.</h3><p>Med bløde løg, paprika, chili</p></div>
+          <div class="menu-item__price"><span>74,-</span></div>
+        </div>
+
+        <div class="menu-item" data-category="burgere">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=120&h=120&q=80" alt="Kylling Burger" loading="lazy" />
+          <div class="menu-item__info"><h3>66. Kylling Burger</h3><p>Serveres med frisk salat, tomater, agurker og løg</p></div>
+          <div class="menu-item__price"><span>50,-</span></div>
+        </div>
+
         <div class="menu-item menu-item--popular" data-category="burgere">
-          <img class="menu-item__img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=120&h=120&q=80" alt="Husets Burger" loading="lazy" />
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=120&h=120&q=80" alt="Oste Burger" loading="lazy" />
           <div class="menu-item__info">
-            <div class="menu-item__name-row">
-              <h3>Husets Burger</h3>
-              <span class="menu-item__badge">Husets specialitet</span>
-            </div>
-            <p>Håndlavet bøf (ca. 200 g), frisk salat, tomat, løg, sylteagurk og dressing</p>
+            <div class="menu-item__name-row"><h3>67. Oste Burger ca. 200 gr.</h3><span class="menu-item__badge">Husets burger</span></div>
+            <p>Oksekød, cheddar, bacon, kartoffelbåde, hjemmelavet chilimayonnaise</p>
           </div>
-          <div class="menu-item__price">
-            <span>89 kr</span>
-          </div>
+          <div class="menu-item__price"><span>95,-</span></div>
         </div>
 
         <div class="menu-item" data-category="burgere">
-          <img class="menu-item__img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=120&h=120&q=80" alt="Cheeseburger" loading="lazy" />
-          <div class="menu-item__info">
-            <h3>Cheeseburger</h3>
-            <p>Bøf, cheddar, salat, tomat, løg og ketchup</p>
-          </div>
-          <div class="menu-item__price">
-            <span>85 kr</span>
-          </div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=120&h=120&q=80" alt="Guacamole Burger" loading="lazy" />
+          <div class="menu-item__info"><h3>68. Guacamole Burger ca. 200 gr.</h3><p>Oksekød, cheddar, jalapeños, kartoffelbåde, hjemmelavet chilimayonnaise</p></div>
+          <div class="menu-item__price"><span>95,-</span></div>
         </div>
 
         <div class="menu-item" data-category="burgere">
-          <img class="menu-item__img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=120&h=120&q=80" alt="Spicy Burger" loading="lazy" />
-          <div class="menu-item__info">
-            <h3>Spicy Burger</h3>
-            <p>Bøf, jalapeños, peberfrugt, cheddar, chili-mayo og salat</p>
-          </div>
-          <div class="menu-item__price">
-            <span>92 kr</span>
-          </div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=120&h=120&q=80" alt="Viking Burger" loading="lazy" />
+          <div class="menu-item__info"><h3>69. Viking Burger ca. 200 gr.</h3><p>Oksekød, stegte løg, spejlæg, kartoffelbåde, hjemmelavet chilimayonnaise</p></div>
+          <div class="menu-item__price"><span>95,-</span></div>
         </div>
 
-        <!-- ANDET -->
+        <!-- ===== ØVRIGE RETTER ===== -->
         <div class="menu-item" data-category="andet">
-          <img class="menu-item__img" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=120&h=120&q=80" alt="Salat" loading="lazy" />
-          <div class="menu-item__info">
-            <h3>Salat</h3>
-            <p>Frisk blandet salat med tomat, agurk, løg og dressing</p>
-          </div>
-          <div class="menu-item__price">
-            <span>65 kr</span>
-          </div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=120&h=120&q=80" alt="Grøn Salat" loading="lazy" />
+          <div class="menu-item__info"><h3>93. Grøn Salat</h3><p>Med frisk salat</p></div>
+          <div class="menu-item__price"><span>49,-</span></div>
+        </div>
+
+        <div class="menu-item" data-category="andet">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=120&h=120&q=80" alt="Kylling Salat" loading="lazy" />
+          <div class="menu-item__info"><h3>94. Kylling Salat</h3><p>Kylling med frisk salat</p></div>
+          <div class="menu-item__price"><span>59,-</span></div>
+        </div>
+
+        <div class="menu-item" data-category="andet">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=120&h=120&q=80" alt="Græsk Salat" loading="lazy" />
+          <div class="menu-item__info"><h3>95. Græsk Salat</h3><p>Med frisk salat</p></div>
+          <div class="menu-item__price"><span>59,-</span></div>
         </div>
 
         <div class="menu-item menu-item--popular" data-category="andet">
           <img class="menu-item__img" src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=120&h=120&q=80" alt="Durum Rulle" loading="lazy" />
           <div class="menu-item__info">
-            <div class="menu-item__name-row">
-              <h3>Durum Rulle</h3>
-              <span class="menu-item__badge">Hjemmelavet</span>
-            </div>
-            <p>Hjemmelavet durum med kød, salat, tomater, løg og dressing</p>
+            <div class="menu-item__name-row"><h3>48. Stor Durum Rulle</h3><span class="menu-item__badge">Hjemmelavet</span></div>
+            <p>Vælg: kebab, kylling, falafel, skinke, græsk bøf, tun, rejer</p>
           </div>
-          <div class="menu-item__price">
-            <span>65 kr</span>
-          </div>
+          <div class="menu-item__price"><span>68,-</span></div>
         </div>
 
         <div class="menu-item" data-category="andet">
-          <img class="menu-item__img" src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=120&h=120&q=80" alt="Pitabrød" loading="lazy" />
-          <div class="menu-item__info">
-            <h3>Pitabrød</h3>
-            <p>Pitabrød med valgfrit fyld og dressing</p>
-          </div>
-          <div class="menu-item__price">
-            <span>55 kr</span>
-          </div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=120&h=120&q=80" alt="Pita med kebab/kylling/tun/falafel" loading="lazy" />
+          <div class="menu-item__info"><h3>50–53. Pita</h3><p>Med kebab, kylling, tun eller falafel – serveres med salat og dressing</p></div>
+          <div class="menu-item__price"><span>43,-</span></div>
         </div>
 
         <div class="menu-item" data-category="andet">
-          <img class="menu-item__img" src="https://images.unsplash.com/photo-1551183053-bf91798d773e?auto=format&fit=crop&w=120&h=120&q=80" alt="Pasta" loading="lazy" />
-          <div class="menu-item__info">
-            <h3>Pasta</h3>
-            <p>Pasta med valgfri sauce: bolognese, carbonara eller tomatsauce</p>
-          </div>
-          <div class="menu-item__price">
-            <span>75 kr</span>
-          </div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=120&h=120&q=80" alt="Pita med græsk bøf" loading="lazy" />
+          <div class="menu-item__info"><h3>54–55. Pita</h3><p>Med græsk bøf eller Saranda bøf</p></div>
+          <div class="menu-item__price"><span>48,-</span></div>
         </div>
 
         <div class="menu-item" data-category="andet">
-          <img class="menu-item__img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=120&h=120&q=80" alt="Ekstra tilbehør" loading="lazy" />
-          <div class="menu-item__info">
-            <h3>Ekstra tilbehør</h3>
-            <p>Pommes frites, coleslaw, dips og saucer</p>
-          </div>
-          <div class="menu-item__price">
-            <span>Fra 15 kr</span>
-          </div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=120&h=120&q=80" alt="Stor Pizzasandwich" loading="lazy" />
+          <div class="menu-item__info"><h3>46. Stor Pizzasandwich</h3><p>Vælg: kebab, kylling, falafel, skinke, græsk bøf, tun, rejer</p></div>
+          <div class="menu-item__price"><span>68,-</span></div>
         </div>
 
-        <!-- BØRN -->
-        <div class="menu-item" data-category="born">
-          <img class="menu-item__img" src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=120&h=120&q=80" alt="Børnepizza" loading="lazy" />
+        <div class="menu-item" data-category="andet">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1551183053-bf91798d773e?auto=format&fit=crop&w=120&h=120&q=80" alt="Spaghetti Bolognese" loading="lazy" />
+          <div class="menu-item__info"><h3>70. Spaghetti Bolognese</h3><p>Med kødsauce</p></div>
+          <div class="menu-item__price"><span>89,-</span></div>
+        </div>
+
+        <div class="menu-item" data-category="andet">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1551183053-bf91798d773e?auto=format&fit=crop&w=120&h=120&q=80" alt="Spaghetti Carbonara" loading="lazy" />
+          <div class="menu-item__info"><h3>72. Spaghetti Carbonara</h3><p>Med bacon, æg, flødesauce</p></div>
+          <div class="menu-item__price"><span>89,-</span></div>
+        </div>
+
+        <div class="menu-item" data-category="andet">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1551183053-bf91798d773e?auto=format&fit=crop&w=120&h=120&q=80" alt="Pasta Penne" loading="lazy" />
+          <div class="menu-item__info"><h3>73. Pasta Penne</h3><p>Med bacon, kylling, tomat-flødesauce</p></div>
+          <div class="menu-item__price"><span>89,-</span></div>
+        </div>
+
+        <div class="menu-item menu-item--popular" data-category="andet">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1551183053-bf91798d773e?auto=format&fit=crop&w=120&h=120&q=80" alt="Fettucine Saranda" loading="lazy" />
           <div class="menu-item__info">
-            <h3>Børnepizza</h3>
-            <p>Lille pizza med tomatsauce og mozzarella, tilpasset de mindste</p>
+            <div class="menu-item__name-row"><h3>74. Fettucine Saranda</h3><span class="menu-item__badge">Populær</span></div>
+            <p>Båndspaghetti med bacon, løg, champignon, tomat-flødesauce</p>
           </div>
-          <div class="menu-item__price">
-            <span>55 kr</span>
-          </div>
+          <div class="menu-item__price"><span>89,-</span></div>
+        </div>
+
+        <div class="menu-item" data-category="andet">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1551183053-bf91798d773e?auto=format&fit=crop&w=120&h=120&q=80" alt="Tortelini" loading="lazy" />
+          <div class="menu-item__info"><h3>75. Tortelini a la Penna</h3><p>Kødfuldt pasta med champignon og tomat-flødesauce</p></div>
+          <div class="menu-item__price"><span>89,-</span></div>
+        </div>
+
+        <div class="menu-item" data-category="andet">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=120&h=120&q=80" alt="Kebab Ret" loading="lazy" />
+          <div class="menu-item__info"><h3>78. Kebab Ret</h3><p>Med bearnaisesauce, salat, pommes frites/kartoffelbåde</p></div>
+          <div class="menu-item__price"><span>85,-</span></div>
+        </div>
+
+        <div class="menu-item" data-category="andet">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=120&h=120&q=80" alt="Saranda Bøf" loading="lazy" />
+          <div class="menu-item__info"><h3>80. Saranda Bøf</h3><p>2 stk. med bearnaisesauce, salat, pommes frites/kartoffelbåde</p></div>
+          <div class="menu-item__price"><span>85,-</span></div>
+        </div>
+
+        <div class="menu-item" data-category="andet">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=120&h=120&q=80" alt="Falafel" loading="lazy" />
+          <div class="menu-item__info"><h3>86. Falafel</h3><p>Med hvidløgsdressing, salat, pommes frites/kartoffelbåde</p></div>
+          <div class="menu-item__price"><span>85,-</span></div>
+        </div>
+
+        <div class="menu-item" data-category="andet">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=120&h=120&q=80" alt="Hvidløgsbrød" loading="lazy" />
+          <div class="menu-item__info"><h3>105. Hvidløgsbrød</h3><p>Med tomatsauce, ost og hvidløg</p></div>
+          <div class="menu-item__price"><span>40,-</span></div>
+        </div>
+
+        <div class="menu-item" data-category="andet">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=120&h=120&q=80" alt="Pommes Frites" loading="lazy" />
+          <div class="menu-item__info"><h3>Pommes Frites</h3><p>Lille eller stor portion</p></div>
+          <div class="menu-item__price"><span>35,–</span><small>Stor 40,-</small></div>
+        </div>
+
+        <div class="menu-item" data-category="andet">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=120&h=120&q=80" alt="Chicken Dipper" loading="lazy" />
+          <div class="menu-item__info"><h3>110. Chicken Dipper</h3><p>6 stk.</p></div>
+          <div class="menu-item__price"><span>35,-</span><small>9 stk. 40,-</small></div>
+        </div>
+
+        <!-- ===== BØRNERETTER ===== -->
+        <div class="menu-item" data-category="born">
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=120&h=120&q=80" alt="Børne Pizza" loading="lazy" />
+          <div class="menu-item__info"><h3>97. Børne Pizza</h3><p>Tomat, ost, skinke / kødsauce eller pepperoni</p></div>
+          <div class="menu-item__price"><span>55,-</span></div>
         </div>
 
         <div class="menu-item" data-category="born">
-          <img class="menu-item__img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=120&h=120&q=80" alt="Børneburger" loading="lazy" />
-          <div class="menu-item__info">
-            <h3>Børneburger</h3>
-            <p>Lille burger med pommes frites og dåsesodavand</p>
-          </div>
-          <div class="menu-item__price">
-            <span>65 kr</span>
-          </div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=120&h=120&q=80" alt="Chicken Dipper Børn" loading="lazy" />
+          <div class="menu-item__info"><h3>98. Chicken Dipper</h3><p>6 stk. med pommes frites og ketchup</p></div>
+          <div class="menu-item__price"><span>55,-</span></div>
         </div>
 
         <div class="menu-item" data-category="born">
-          <img class="menu-item__img" src="https://images.unsplash.com/photo-1551183053-bf91798d773e?auto=format&fit=crop&w=120&h=120&q=80" alt="Børnepasta" loading="lazy" />
-          <div class="menu-item__info">
-            <h3>Børnepasta</h3>
-            <p>Pasta med tomatsauce eller bolognese, perfekt portion til børn</p>
-          </div>
-          <div class="menu-item__price">
-            <span>55 kr</span>
-          </div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=120&h=120&q=80" alt="Fiskefilet" loading="lazy" />
+          <div class="menu-item__info"><h3>100. Fiskefilet</h3><p>Med pommes frites og remoulade</p></div>
+          <div class="menu-item__price"><span>55,-</span></div>
         </div>
 
       </div><!-- /menu-grid -->
