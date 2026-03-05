@@ -183,6 +183,13 @@ ul { list-style: none; }
 .logo-icon { font-size: 1.6rem; }
 .logo-accent { color: var(--accent); }
 
+.navbar__logo-img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
 .navbar__nav {
   display: flex;
   align-items: center;
@@ -563,25 +570,37 @@ ul { list-style: none; }
 }
 
 .menu-item__badge {
-  position: absolute;
-  top: 12px;
-  right: 12px;
+  display: inline-block;
   background: var(--accent);
   color: #fff;
-  font-size: 0.68rem;
+  font-size: 0.65rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  padding: 3px 10px;
+  padding: 2px 8px;
   border-radius: 100px;
+  margin-bottom: 4px;
+  align-self: flex-start;
 }
 
-.menu-item__emoji {
-  font-size: 2.2rem;
-  line-height: 1;
+.menu-item__name-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+}
+.menu-item__name-row h3 {
+  margin-bottom: 0;
+}
+
+.menu-item__img {
+  width: 76px;
+  height: 76px;
+  border-radius: var(--radius-md);
+  object-fit: cover;
   flex-shrink: 0;
-  width: 44px;
-  text-align: center;
+  background: var(--bg-section);
 }
 
 .menu-item__info {

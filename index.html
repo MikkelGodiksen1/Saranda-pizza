@@ -16,8 +16,16 @@
   <header class="navbar" id="navbar">
     <div class="container navbar__inner">
       <a href="#" class="navbar__logo">
-        <span class="logo-icon">🍕</span>
-        <span class="logo-text">Saranda<span class="logo-accent">Pizza</span></span>
+        <img
+          src="https://lh3.googleusercontent.com/gg-dl/AOI_d_9SLjIUfm9w36phOyDJ15GP524hvjiJ8f6QQsDG2xrIhP0jl4Q1d2QIDK8ZOYHvq1jsoGGwsbiCgdhE2omPYDlArxzKqp_uqj68Gq2JsyGqMtwa_LtubsIRAdWhm7mDMyjOootaeDixblfoeKJZLjDgL4E8UgAJAAVfOzls4JqmTTEk=s1024-rj"
+          alt="Saranda Pizza logo"
+          class="navbar__logo-img"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+        />
+        <span class="navbar__logo-fallback" style="display:none; align-items:center; gap:10px;">
+          <span class="logo-icon">🍕</span>
+          <span class="logo-text">Saranda<span class="logo-accent">Pizza</span></span>
+        </span>
       </a>
       <nav class="navbar__nav" id="nav-menu">
         <a href="#menu" class="nav-link">Menu</a>
@@ -84,44 +92,10 @@
         <div class="pizza-showcase">
           <div class="pizza-plate">
             <div class="pizza-img">
-              <div class="pizza-svg-wrap">
-                <!-- Decorative pizza SVG -->
-                <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="150" cy="150" r="145" fill="#c8601a"/>
-                  <circle cx="150" cy="150" r="130" fill="#e8a456"/>
-                  <circle cx="150" cy="150" r="115" fill="#d4611c"/>
-                  <!-- Cheese -->
-                  <circle cx="150" cy="150" r="110" fill="#f2c46d"/>
-                  <!-- Sauce patches -->
-                  <circle cx="120" cy="120" r="30" fill="#c0392b" opacity="0.7"/>
-                  <circle cx="175" cy="115" r="25" fill="#c0392b" opacity="0.7"/>
-                  <circle cx="140" cy="170" r="28" fill="#c0392b" opacity="0.7"/>
-                  <circle cx="185" cy="165" r="22" fill="#c0392b" opacity="0.7"/>
-                  <!-- Toppings (pepperoni) -->
-                  <circle cx="115" cy="115" r="14" fill="#8b1a0a"/>
-                  <circle cx="115" cy="115" r="12" fill="#a82010"/>
-                  <circle cx="178" cy="108" r="13" fill="#8b1a0a"/>
-                  <circle cx="178" cy="108" r="11" fill="#a82010"/>
-                  <circle cx="145" cy="168" r="13" fill="#8b1a0a"/>
-                  <circle cx="145" cy="168" r="11" fill="#a82010"/>
-                  <circle cx="188" cy="160" r="12" fill="#8b1a0a"/>
-                  <circle cx="188" cy="160" r="10" fill="#a82010"/>
-                  <circle cx="135" cy="130" r="11" fill="#8b1a0a"/>
-                  <circle cx="135" cy="130" r="9" fill="#a82010"/>
-                  <circle cx="165" cy="140" r="10" fill="#8b1a0a"/>
-                  <circle cx="165" cy="140" r="8" fill="#a82010"/>
-                  <!-- Basil leaves -->
-                  <ellipse cx="155" cy="90" rx="8" ry="14" fill="#2d8a4e" transform="rotate(20 155 90)"/>
-                  <ellipse cx="200" cy="185" rx="7" ry="12" fill="#2d8a4e" transform="rotate(-30 200 185)"/>
-                  <ellipse cx="100" cy="170" rx="6" ry="11" fill="#2d8a4e" transform="rotate(15 100 170)"/>
-                  <!-- Mozzarella blobs -->
-                  <ellipse cx="130" cy="155" rx="12" ry="9" fill="#fff8e7" opacity="0.9"/>
-                  <ellipse cx="162" cy="125" rx="10" ry="8" fill="#fff8e7" opacity="0.9"/>
-                  <ellipse cx="175" cy="155" rx="9" ry="7" fill="#fff8e7" opacity="0.9"/>
-                  <!-- Crust highlight -->
-                  <circle cx="150" cy="150" r="145" fill="none" stroke="#d4803a" stroke-width="4" opacity="0.4"/>
-                </svg>
-              </div>
+              <img
+                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=85"
+                alt="Saranda Pizza – frisk pizza"
+              />
             </div>
           </div>
           <div class="pizza-badge pizza-badge--top">
@@ -195,7 +169,7 @@
 
         <!-- PIZZAER -->
         <div class="menu-item" data-category="pizzaer">
-          <div class="menu-item__emoji">🍕</div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=120&h=120&q=80" alt="Margherita pizza" loading="lazy" />
           <div class="menu-item__info">
             <h3>Margherita</h3>
             <p>Tomatsauce, mozzarella, frisk basilikum</p>
@@ -207,7 +181,7 @@
         </div>
 
         <div class="menu-item" data-category="pizzaer">
-          <div class="menu-item__emoji">🍕</div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=120&h=120&q=80" alt="Pepperoni pizza" loading="lazy" />
           <div class="menu-item__info">
             <h3>Pepperoni</h3>
             <p>Tomatsauce, mozzarella, pepperoni</p>
@@ -219,7 +193,7 @@
         </div>
 
         <div class="menu-item" data-category="pizzaer">
-          <div class="menu-item__emoji">🍕</div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?auto=format&fit=crop&w=120&h=120&q=80" alt="Hawaii pizza" loading="lazy" />
           <div class="menu-item__info">
             <h3>Hawaii</h3>
             <p>Tomatsauce, mozzarella, skinke, ananas</p>
@@ -231,7 +205,7 @@
         </div>
 
         <div class="menu-item" data-category="pizzaer">
-          <div class="menu-item__emoji">🍕</div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=120&h=120&q=80" alt="Capricciosa pizza" loading="lazy" />
           <div class="menu-item__info">
             <h3>Capricciosa</h3>
             <p>Tomatsauce, mozzarella, skinke, champignon</p>
@@ -243,7 +217,7 @@
         </div>
 
         <div class="menu-item" data-category="pizzaer">
-          <div class="menu-item__emoji">🍕</div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=120&h=120&q=80" alt="Quattro Formaggi pizza" loading="lazy" />
           <div class="menu-item__info">
             <h3>Quattro Formaggi</h3>
             <p>Flødesauce, fire slags ost: mozzarella, parmesan, gorgonzola, gouda</p>
@@ -255,10 +229,12 @@
         </div>
 
         <div class="menu-item menu-item--popular" data-category="pizzaer">
-          <span class="menu-item__badge">Populær</span>
-          <div class="menu-item__emoji">🍕</div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=120&h=120&q=80" alt="Mexicana pizza" loading="lazy" />
           <div class="menu-item__info">
-            <h3>Mexicana</h3>
+            <div class="menu-item__name-row">
+              <h3>Mexicana</h3>
+              <span class="menu-item__badge">Populær</span>
+            </div>
             <p>Tomatsauce, mozzarella, hakket oksekød, jalapeños, løg, peberfrugt</p>
           </div>
           <div class="menu-item__price">
@@ -268,7 +244,7 @@
         </div>
 
         <div class="menu-item" data-category="pizzaer">
-          <div class="menu-item__emoji">🥗</div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=120&h=120&q=80" alt="Salatpizza" loading="lazy" />
           <div class="menu-item__info">
             <h3>Salatpizza</h3>
             <p>Tomatsauce, mozzarella, toppet med frisk salat, tomat og dressing</p>
@@ -280,7 +256,7 @@
         </div>
 
         <div class="menu-item" data-category="pizzaer">
-          <div class="menu-item__emoji">🫔</div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?auto=format&fit=crop&w=120&h=120&q=80" alt="Indbagt pizza" loading="lazy" />
           <div class="menu-item__info">
             <h3>Indbagt Pizza</h3>
             <p>Din valgte pizza foldet og bagt lukket – sprød og saftig indeni</p>
@@ -292,7 +268,7 @@
         </div>
 
         <div class="menu-item" data-category="pizzaer">
-          <div class="menu-item__emoji">🍕</div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=120&h=120&q=80" alt="Vesuvio pizza" loading="lazy" />
           <div class="menu-item__info">
             <h3>Vesuvio</h3>
             <p>Tomatsauce, mozzarella, skinke, æg, champignon</p>
@@ -304,7 +280,7 @@
         </div>
 
         <div class="menu-item" data-category="pizzaer">
-          <div class="menu-item__emoji">🍕</div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=120&h=120&q=80" alt="Tonno pizza" loading="lazy" />
           <div class="menu-item__info">
             <h3>Tonno</h3>
             <p>Tomatsauce, mozzarella, tun, løg, kapers</p>
@@ -316,7 +292,7 @@
         </div>
 
         <div class="menu-item" data-category="pizzaer">
-          <div class="menu-item__emoji">🍕</div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=120&h=120&q=80" alt="Kebabpizza" loading="lazy" />
           <div class="menu-item__info">
             <h3>Kebabpizza</h3>
             <p>Tomatsauce, mozzarella, kebabkød, løg, peberfrugt, dressing</p>
@@ -328,10 +304,12 @@
         </div>
 
         <div class="menu-item menu-item--popular" data-category="pizzaer">
-          <span class="menu-item__badge">Husets favorit</span>
-          <div class="menu-item__emoji">🍕</div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=120&h=120&q=80" alt="Saranda Special pizza" loading="lazy" />
           <div class="menu-item__info">
-            <h3>Saranda Special</h3>
+            <div class="menu-item__name-row">
+              <h3>Saranda Special</h3>
+              <span class="menu-item__badge">Husets favorit</span>
+            </div>
             <p>Tomatsauce, mozzarella, skinke, champignon, pepperoni, peberfrugt, oliven</p>
           </div>
           <div class="menu-item__price">
@@ -342,7 +320,7 @@
 
         <!-- MENUPAKKER -->
         <div class="menu-item" data-category="menupakker">
-          <div class="menu-item__emoji">🥙</div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=120&h=120&q=80" alt="Pitabrød Menu" loading="lazy" />
           <div class="menu-item__info">
             <h3>Pitabrød Menu</h3>
             <p>Pitabrød med valgfrit fyld, pommes frites og dåsesodavand</p>
@@ -353,10 +331,12 @@
         </div>
 
         <div class="menu-item menu-item--popular" data-category="menupakker">
-          <span class="menu-item__badge">Bestseller</span>
-          <div class="menu-item__emoji">🌯</div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=120&h=120&q=80" alt="Dürüm Menu" loading="lazy" />
           <div class="menu-item__info">
-            <h3>Dürüm Menu</h3>
+            <div class="menu-item__name-row">
+              <h3>Dürüm Menu</h3>
+              <span class="menu-item__badge">Bestseller</span>
+            </div>
             <p>Hjemmelavet dürüm rulle med valgfrit fyld, pommes frites og dåsesodavand</p>
           </div>
           <div class="menu-item__price">
@@ -365,7 +345,7 @@
         </div>
 
         <div class="menu-item" data-category="menupakker">
-          <div class="menu-item__emoji">🍔</div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=120&h=120&q=80" alt="Burger Menu" loading="lazy" />
           <div class="menu-item__info">
             <h3>Burger Menu</h3>
             <p>Husets burger (ca. 200 g), pommes frites og dåsesodavand</p>
@@ -376,7 +356,7 @@
         </div>
 
         <div class="menu-item" data-category="menupakker">
-          <div class="menu-item__emoji">🥪</div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=120&h=120&q=80" alt="Sandwich Menu" loading="lazy" />
           <div class="menu-item__info">
             <h3>Sandwich Menu</h3>
             <p>Frisk sandwich med valgfrit fyld, pommes frites og dåsesodavand</p>
@@ -388,10 +368,12 @@
 
         <!-- BURGERE -->
         <div class="menu-item menu-item--popular" data-category="burgere">
-          <span class="menu-item__badge">Husets specialitet</span>
-          <div class="menu-item__emoji">🍔</div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=120&h=120&q=80" alt="Husets Burger" loading="lazy" />
           <div class="menu-item__info">
-            <h3>Husets Burger</h3>
+            <div class="menu-item__name-row">
+              <h3>Husets Burger</h3>
+              <span class="menu-item__badge">Husets specialitet</span>
+            </div>
             <p>Håndlavet bøf (ca. 200 g), frisk salat, tomat, løg, sylteagurk og dressing</p>
           </div>
           <div class="menu-item__price">
@@ -400,7 +382,7 @@
         </div>
 
         <div class="menu-item" data-category="burgere">
-          <div class="menu-item__emoji">🍔</div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=120&h=120&q=80" alt="Cheeseburger" loading="lazy" />
           <div class="menu-item__info">
             <h3>Cheeseburger</h3>
             <p>Bøf, cheddar, salat, tomat, løg og ketchup</p>
@@ -411,7 +393,7 @@
         </div>
 
         <div class="menu-item" data-category="burgere">
-          <div class="menu-item__emoji">🌶️</div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=120&h=120&q=80" alt="Spicy Burger" loading="lazy" />
           <div class="menu-item__info">
             <h3>Spicy Burger</h3>
             <p>Bøf, jalapeños, peberfrugt, cheddar, chili-mayo og salat</p>
@@ -423,7 +405,7 @@
 
         <!-- ANDET -->
         <div class="menu-item" data-category="andet">
-          <div class="menu-item__emoji">🥗</div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=120&h=120&q=80" alt="Salat" loading="lazy" />
           <div class="menu-item__info">
             <h3>Salat</h3>
             <p>Frisk blandet salat med tomat, agurk, løg og dressing</p>
@@ -434,10 +416,12 @@
         </div>
 
         <div class="menu-item menu-item--popular" data-category="andet">
-          <span class="menu-item__badge">Hjemmelavet</span>
-          <div class="menu-item__emoji">🌯</div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=120&h=120&q=80" alt="Durum Rulle" loading="lazy" />
           <div class="menu-item__info">
-            <h3>Durum Rulle</h3>
+            <div class="menu-item__name-row">
+              <h3>Durum Rulle</h3>
+              <span class="menu-item__badge">Hjemmelavet</span>
+            </div>
             <p>Hjemmelavet durum med kød, salat, tomater, løg og dressing</p>
           </div>
           <div class="menu-item__price">
@@ -446,7 +430,7 @@
         </div>
 
         <div class="menu-item" data-category="andet">
-          <div class="menu-item__emoji">🥙</div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=120&h=120&q=80" alt="Pitabrød" loading="lazy" />
           <div class="menu-item__info">
             <h3>Pitabrød</h3>
             <p>Pitabrød med valgfrit fyld og dressing</p>
@@ -457,7 +441,7 @@
         </div>
 
         <div class="menu-item" data-category="andet">
-          <div class="menu-item__emoji">🍝</div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1551183053-bf91798d773e?auto=format&fit=crop&w=120&h=120&q=80" alt="Pasta" loading="lazy" />
           <div class="menu-item__info">
             <h3>Pasta</h3>
             <p>Pasta med valgfri sauce: bolognese, carbonara eller tomatsauce</p>
@@ -468,7 +452,7 @@
         </div>
 
         <div class="menu-item" data-category="andet">
-          <div class="menu-item__emoji">🍟</div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=120&h=120&q=80" alt="Ekstra tilbehør" loading="lazy" />
           <div class="menu-item__info">
             <h3>Ekstra tilbehør</h3>
             <p>Pommes frites, coleslaw, dips og saucer</p>
@@ -480,7 +464,7 @@
 
         <!-- BØRN -->
         <div class="menu-item" data-category="born">
-          <div class="menu-item__emoji">👶</div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=120&h=120&q=80" alt="Børnepizza" loading="lazy" />
           <div class="menu-item__info">
             <h3>Børnepizza</h3>
             <p>Lille pizza med tomatsauce og mozzarella, tilpasset de mindste</p>
@@ -491,7 +475,7 @@
         </div>
 
         <div class="menu-item" data-category="born">
-          <div class="menu-item__emoji">🍔</div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=120&h=120&q=80" alt="Børneburger" loading="lazy" />
           <div class="menu-item__info">
             <h3>Børneburger</h3>
             <p>Lille burger med pommes frites og dåsesodavand</p>
@@ -502,7 +486,7 @@
         </div>
 
         <div class="menu-item" data-category="born">
-          <div class="menu-item__emoji">🍝</div>
+          <img class="menu-item__img" src="https://images.unsplash.com/photo-1551183053-bf91798d773e?auto=format&fit=crop&w=120&h=120&q=80" alt="Børnepasta" loading="lazy" />
           <div class="menu-item__info">
             <h3>Børnepasta</h3>
             <p>Pasta med tomatsauce eller bolognese, perfekt portion til børn</p>
@@ -525,66 +509,12 @@
     <div class="container about__grid">
       <div class="about__visual">
         <div class="about__img-wrap">
-          <!-- Decorative storefront illustration -->
-          <svg viewBox="0 0 420 340" xmlns="http://www.w3.org/2000/svg" class="about__illustration">
-            <!-- Sky -->
-            <rect width="420" height="340" fill="#1a1a2e"/>
-            <!-- Stars -->
-            <circle cx="40" cy="30" r="2" fill="#fff" opacity="0.8"/>
-            <circle cx="80" cy="20" r="1.5" fill="#fff" opacity="0.6"/>
-            <circle cx="140" cy="40" r="2" fill="#fff" opacity="0.7"/>
-            <circle cx="300" cy="25" r="1.5" fill="#fff" opacity="0.5"/>
-            <circle cx="380" cy="15" r="2" fill="#fff" opacity="0.8"/>
-            <circle cx="350" cy="50" r="1" fill="#fff" opacity="0.6"/>
-            <!-- Building -->
-            <rect x="50" y="80" width="320" height="240" rx="4" fill="#2d2d2d"/>
-            <!-- Roof decoration -->
-            <rect x="40" y="68" width="340" height="20" rx="4" fill="#e84c1e"/>
-            <text x="210" y="83" text-anchor="middle" font-family="Poppins,sans-serif" font-size="11" font-weight="700" fill="#fff">SARANDA PIZZA</text>
-            <!-- Awning -->
-            <path d="M80 100 L340 100 L320 130 L100 130 Z" fill="#c0392b"/>
-            <line x1="100" y1="100" x2="100" y2="130" stroke="#fff" stroke-width="2" opacity="0.5"/>
-            <line x1="140" y1="100" x2="130" y2="130" stroke="#fff" stroke-width="2" opacity="0.5"/>
-            <line x1="180" y1="100" x2="168" y2="130" stroke="#fff" stroke-width="2" opacity="0.5"/>
-            <line x1="220" y1="100" x2="210" y2="130" stroke="#fff" stroke-width="2" opacity="0.5"/>
-            <line x1="260" y1="100" x2="252" y2="130" stroke="#fff" stroke-width="2" opacity="0.5"/>
-            <line x1="300" y1="100" x2="294" y2="130" stroke="#fff" stroke-width="2" opacity="0.5"/>
-            <!-- Window left -->
-            <rect x="70" y="145" width="100" height="80" rx="4" fill="#1a1a1a"/>
-            <rect x="75" y="150" width="90" height="70" rx="2" fill="#ffd700" opacity="0.15"/>
-            <line x1="120" y1="150" x2="120" y2="220" stroke="#333" stroke-width="3"/>
-            <line x1="75" y1="185" x2="165" y2="185" stroke="#333" stroke-width="3"/>
-            <!-- Window right -->
-            <rect x="250" y="145" width="100" height="80" rx="4" fill="#1a1a1a"/>
-            <rect x="255" y="150" width="90" height="70" rx="2" fill="#ffd700" opacity="0.15"/>
-            <line x1="300" y1="150" x2="300" y2="220" stroke="#333" stroke-width="3"/>
-            <line x1="255" y1="185" x2="345" y2="185" stroke="#333" stroke-width="3"/>
-            <!-- Door -->
-            <rect x="165" y="200" width="90" height="120" rx="4" fill="#1a1a1a"/>
-            <rect x="170" y="205" width="80" height="110" rx="2" fill="#2a2a2a"/>
-            <rect x="185" y="220" width="25" height="40" rx="2" fill="#1a1a1a"/>
-            <rect x="210" y="220" width="25" height="40" rx="2" fill="#1a1a1a"/>
-            <circle cx="213" cy="242" r="4" fill="#e84c1e"/>
-            <!-- ÅBEN sign -->
-            <rect x="175" y="265" width="70" height="22" rx="3" fill="#27ae60"/>
-            <text x="210" y="281" text-anchor="middle" font-family="Poppins,sans-serif" font-size="10" font-weight="700" fill="#fff">ÅBEN</text>
-            <!-- Street -->
-            <rect x="0" y="320" width="420" height="20" fill="#111"/>
-            <rect x="0" y="315" width="420" height="8" fill="#222"/>
-            <!-- Cobblestone effect -->
-            <line x1="0" y1="318" x2="420" y2="318" stroke="#333" stroke-width="1" stroke-dasharray="20,10"/>
-            <!-- Pizza sign above door -->
-            <circle cx="210" cy="175" r="20" fill="#e84c1e"/>
-            <text x="210" y="179" text-anchor="middle" font-family="serif" font-size="18">🍕</text>
-            <!-- Lights -->
-            <circle cx="100" cy="140" r="5" fill="#ffd700" opacity="0.8"/>
-            <circle cx="160" cy="140" r="5" fill="#ffd700" opacity="0.8"/>
-            <circle cx="220" cy="140" r="5" fill="#ffd700" opacity="0.8"/>
-            <circle cx="280" cy="140" r="5" fill="#ffd700" opacity="0.8"/>
-            <circle cx="330" cy="140" r="5" fill="#ffd700" opacity="0.8"/>
-            <!-- Light strings -->
-            <path d="M80 135 Q120 130 160 135 Q200 130 240 135 Q280 130 320 135 Q340 130 350 135" stroke="#ffd700" stroke-width="1.5" fill="none" opacity="0.6"/>
-          </svg>
+          <img
+            src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=85"
+            alt="Saranda Pizza restaurant interiør"
+            loading="lazy"
+            class="about__photo"
+          />
           <div class="about__year-tag">Siden 1994</div>
         </div>
       </div>
@@ -626,150 +556,58 @@
       </div>
       <div class="gallery-grid">
         <div class="gallery-item gallery-item--large">
-          <div class="gallery-placeholder gallery-placeholder--pizza1">
-            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-              <rect width="400" height="300" fill="#1a0a02"/>
-              <circle cx="200" cy="150" r="130" fill="#c8601a"/>
-              <circle cx="200" cy="150" r="118" fill="#e8a456"/>
-              <circle cx="200" cy="150" r="105" fill="#f2c46d"/>
-              <circle cx="160" cy="130" r="38" fill="#c0392b" opacity="0.7"/>
-              <circle cx="240" cy="120" r="32" fill="#c0392b" opacity="0.7"/>
-              <circle cx="185" cy="185" r="35" fill="#c0392b" opacity="0.7"/>
-              <circle cx="240" cy="175" r="28" fill="#c0392b" opacity="0.7"/>
-              <circle cx="152" cy="122" r="17" fill="#a82010"/>
-              <circle cx="242" cy="112" r="15" fill="#a82010"/>
-              <circle cx="185" cy="177" r="16" fill="#a82010"/>
-              <circle cx="238" cy="168" r="14" fill="#a82010"/>
-              <circle cx="185" cy="145" r="13" fill="#a82010"/>
-              <ellipse cx="205" cy="110" rx="10" ry="17" fill="#2d8a4e" transform="rotate(20 205 110)"/>
-              <ellipse cx="255" cy="200" rx="9" ry="15" fill="#2d8a4e" transform="rotate(-30 255 200)"/>
-              <ellipse cx="145" cy="175" rx="8" ry="13" fill="#2d8a4e" transform="rotate(15 145 175)"/>
-              <ellipse cx="172" cy="162" rx="15" ry="11" fill="#fff8e7" opacity="0.9"/>
-              <ellipse cx="215" cy="138" rx="12" ry="10" fill="#fff8e7" opacity="0.9"/>
-              <text x="200" y="295" text-anchor="middle" font-family="Poppins,sans-serif" font-size="14" fill="#e84c1e" font-weight="600">Saranda Special Pizza</text>
-            </svg>
-          </div>
+          <img
+            src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=85"
+            alt="Saranda Special pizza – husets signaturpizza"
+            loading="lazy"
+          />
           <div class="gallery-item__overlay">
             <h3>Saranda Special</h3>
             <p>Husets signaturpizza</p>
           </div>
         </div>
         <div class="gallery-item">
-          <div class="gallery-placeholder gallery-placeholder--pizza2">
-            <svg viewBox="0 0 300 280" xmlns="http://www.w3.org/2000/svg">
-              <rect width="300" height="280" fill="#0a1a02"/>
-              <circle cx="150" cy="135" r="110" fill="#c8601a"/>
-              <circle cx="150" cy="135" r="100" fill="#e8a456"/>
-              <circle cx="150" cy="135" r="88" fill="#f5f5e0"/>
-              <circle cx="120" cy="115" r="30" fill="#c0392b" opacity="0.8"/>
-              <circle cx="180" cy="110" r="28" fill="#c0392b" opacity="0.8"/>
-              <circle cx="140" cy="162" r="32" fill="#c0392b" opacity="0.8"/>
-              <circle cx="175" cy="158" r="24" fill="#c0392b" opacity="0.8"/>
-              <ellipse cx="148" cy="95" rx="9" ry="16" fill="#2d8a4e" transform="rotate(10 148 95)"/>
-              <ellipse cx="190" cy="175" rx="8" ry="14" fill="#2d8a4e" transform="rotate(-20 190 175)"/>
-              <ellipse cx="108" cy="158" rx="7" ry="12" fill="#2d8a4e" transform="rotate(25 108 158)"/>
-              <ellipse cx="130" cy="148" rx="14" ry="10" fill="#fff8e7" opacity="0.95"/>
-              <ellipse cx="168" cy="128" rx="12" ry="9" fill="#fff8e7" opacity="0.95"/>
-              <ellipse cx="160" cy="158" rx="11" ry="8" fill="#fff8e7" opacity="0.95"/>
-              <text x="150" y="272" text-anchor="middle" font-family="Poppins,sans-serif" font-size="13" fill="#e84c1e" font-weight="600">Margherita</text>
-            </svg>
-          </div>
+          <img
+            src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=500&q=85"
+            alt="Margherita – klassisk og elsket"
+            loading="lazy"
+          />
           <div class="gallery-item__overlay">
             <h3>Margherita</h3>
             <p>Klassisk og elsket</p>
           </div>
         </div>
         <div class="gallery-item">
-          <div class="gallery-placeholder gallery-placeholder--burger">
-            <svg viewBox="0 0 300 280" xmlns="http://www.w3.org/2000/svg">
-              <rect width="300" height="280" fill="#1a0800"/>
-              <!-- Bun top -->
-              <ellipse cx="150" cy="95" rx="90" ry="55" fill="#d4a055"/>
-              <ellipse cx="150" cy="82" rx="88" ry="50" fill="#e8b870"/>
-              <ellipse cx="150" cy="80" rx="86" ry="48" fill="#f0c87a"/>
-              <!-- Sesame seeds -->
-              <ellipse cx="120" cy="68" rx="6" ry="3" fill="#c9954a" transform="rotate(-20 120 68)"/>
-              <ellipse cx="155" cy="62" rx="6" ry="3" fill="#c9954a" transform="rotate(10 155 62)"/>
-              <ellipse cx="185" cy="72" rx="5" ry="3" fill="#c9954a" transform="rotate(-15 185 72)"/>
-              <ellipse cx="138" cy="75" rx="5" ry="3" fill="#c9954a" transform="rotate(25 138 75)"/>
-              <ellipse cx="168" cy="78" rx="5" ry="3" fill="#c9954a" transform="rotate(-5 168 78)"/>
-              <!-- Lettuce -->
-              <ellipse cx="150" cy="132" rx="92" ry="14" fill="#4a9a3a"/>
-              <path d="M62 132 Q80 118 100 132 Q120 118 140 132 Q160 118 180 132 Q200 118 220 132 Q240 118 238 132" stroke="#3a8a2a" stroke-width="3" fill="none"/>
-              <!-- Tomato -->
-              <ellipse cx="150" cy="148" rx="88" ry="12" fill="#e05030"/>
-              <!-- Patty -->
-              <ellipse cx="150" cy="168" rx="90" ry="16" fill="#5a2a0a"/>
-              <ellipse cx="150" cy="164" rx="88" ry="14" fill="#6a3010"/>
-              <!-- Cheese -->
-              <ellipse cx="150" cy="184" rx="92" ry="10" fill="#f0c030"/>
-              <path d="M58 184 L65 196 M242 184 L235 196" stroke="#f0c030" stroke-width="3"/>
-              <!-- Bun bottom -->
-              <ellipse cx="150" cy="200" rx="90" ry="14" fill="#d4a055"/>
-              <ellipse cx="150" cy="206" rx="88" ry="14" fill="#e8b870"/>
-              <text x="150" y="272" text-anchor="middle" font-family="Poppins,sans-serif" font-size="13" fill="#e84c1e" font-weight="600">Husets Burger</text>
-            </svg>
-          </div>
+          <img
+            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=85"
+            alt="Husets Burger – ca. 200 gram ren nydelse"
+            loading="lazy"
+          />
           <div class="gallery-item__overlay">
             <h3>Husets Burger</h3>
             <p>Ca. 200 gram ren nydelse</p>
           </div>
         </div>
         <div class="gallery-item">
-          <div class="gallery-placeholder gallery-placeholder--durum">
-            <svg viewBox="0 0 300 280" xmlns="http://www.w3.org/2000/svg">
-              <rect width="300" height="280" fill="#0a0a1a"/>
-              <!-- Wrap -->
-              <ellipse cx="150" cy="150" rx="65" ry="95" fill="#f0d890" transform="rotate(25 150 150)"/>
-              <ellipse cx="148" cy="148" rx="58" ry="88" fill="#f8e8a0" transform="rotate(25 148 148)"/>
-              <!-- Filling visible at top -->
-              <ellipse cx="162" cy="82" rx="38" ry="18" fill="#2d8a4e" transform="rotate(25 162 82)"/>
-              <ellipse cx="158" cy="75" rx="30" ry="14" fill="#e05030" transform="rotate(25 158 75)"/>
-              <ellipse cx="162" cy="70" rx="28" ry="12" fill="#d4a055" transform="rotate(25 162 70)"/>
-              <!-- Wrap texture lines -->
-              <path d="M108 108 Q150 98 188 115" stroke="#d4c070" stroke-width="1.5" fill="none" opacity="0.6"/>
-              <path d="M100 128 Q145 118 185 135" stroke="#d4c070" stroke-width="1.5" fill="none" opacity="0.6"/>
-              <path d="M98 148 Q143 138 183 155" stroke="#d4c070" stroke-width="1.5" fill="none" opacity="0.6"/>
-              <path d="M100 168 Q145 158 185 175" stroke="#d4c070" stroke-width="1.5" fill="none" opacity="0.6"/>
-              <!-- Foil bottom -->
-              <ellipse cx="138" cy="215" rx="58" ry="20" fill="#d0c880" transform="rotate(25 138 215)"/>
-              <rect x="108" y="195" width="62" height="35" rx="4" fill="#d0c880" transform="rotate(25 108 195)"/>
-              <text x="150" y="272" text-anchor="middle" font-family="Poppins,sans-serif" font-size="13" fill="#e84c1e" font-weight="600">Durum Rulle</text>
-            </svg>
-          </div>
+          <img
+            src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=500&q=85"
+            alt="Durum Rulle – hjemmelavet med kærlighed"
+            loading="lazy"
+          />
           <div class="gallery-item__overlay">
             <h3>Durum Rulle</h3>
             <p>Hjemmelavet med kærlighed</p>
           </div>
         </div>
         <div class="gallery-item">
-          <div class="gallery-placeholder gallery-placeholder--mexica">
-            <svg viewBox="0 0 300 280" xmlns="http://www.w3.org/2000/svg">
-              <rect width="300" height="280" fill="#1a0202"/>
-              <circle cx="150" cy="135" r="110" fill="#c8601a"/>
-              <circle cx="150" cy="135" r="100" fill="#e8a456"/>
-              <circle cx="150" cy="135" r="88" fill="#f2c46d"/>
-              <!-- Beef and veggies -->
-              <circle cx="130" cy="115" r="25" fill="#5a2a0a" opacity="0.85"/>
-              <circle cx="172" cy="108" r="22" fill="#5a2a0a" opacity="0.85"/>
-              <circle cx="148" cy="158" r="23" fill="#5a2a0a" opacity="0.85"/>
-              <circle cx="178" cy="152" r="20" fill="#5a2a0a" opacity="0.85"/>
-              <!-- Jalapeños -->
-              <ellipse cx="115" cy="148" rx="6" ry="16" fill="#27ae60" transform="rotate(20 115 148)"/>
-              <ellipse cx="195" cy="130" rx="5" ry="14" fill="#27ae60" transform="rotate(-30 195 130)"/>
-              <ellipse cx="155" cy="100" rx="5" ry="13" fill="#27ae60" transform="rotate(10 155 100)"/>
-              <!-- Red peppers -->
-              <ellipse cx="162" cy="160" rx="12" ry="7" fill="#e84c1e" opacity="0.9" transform="rotate(-20 162 160)"/>
-              <ellipse cx="128" cy="138" rx="11" ry="6" fill="#e84c1e" opacity="0.9" transform="rotate(15 128 138)"/>
-              <!-- Cheese -->
-              <ellipse cx="148" cy="122" rx="13" ry="9" fill="#fff8e7" opacity="0.9"/>
-              <ellipse cx="178" cy="142" rx="11" ry="8" fill="#fff8e7" opacity="0.9"/>
-              <text x="150" y="272" text-anchor="middle" font-family="Poppins,sans-serif" font-size="13" fill="#e84c1e" font-weight="600">Mexicana Pizza</text>
-            </svg>
-          </div>
+          <img
+            src="https://images.unsplash.com/photo-1551183053-bf91798d773e?auto=format&fit=crop&w=500&q=85"
+            alt="Pasta – valgfri sauce"
+            loading="lazy"
+          />
           <div class="gallery-item__overlay">
-            <h3>Mexicana</h3>
-            <p>Med et krydret kick</p>
+            <h3>Pasta</h3>
+            <p>Bolognese, carbonara eller tomat</p>
           </div>
         </div>
       </div>
@@ -899,8 +737,16 @@
     <div class="container footer__inner">
       <div class="footer__brand">
         <a href="#" class="navbar__logo">
-          <span class="logo-icon">🍕</span>
-          <span class="logo-text">Saranda<span class="logo-accent">Pizza</span></span>
+          <img
+            src="https://lh3.googleusercontent.com/gg-dl/AOI_d_9SLjIUfm9w36phOyDJ15GP524hvjiJ8f6QQsDG2xrIhP0jl4Q1d2QIDK8ZOYHvq1jsoGGwsbiCgdhE2omPYDlArxzKqp_uqj68Gq2JsyGqMtwa_LtubsIRAdWhm7mDMyjOootaeDixblfoeKJZLjDgL4E8UgAJAAVfOzls4JqmTTEk=s1024-rj"
+            alt="Saranda Pizza logo"
+            class="navbar__logo-img"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          />
+          <span class="navbar__logo-fallback" style="display:none; align-items:center; gap:10px;">
+            <span class="logo-icon">🍕</span>
+            <span class="logo-text">Saranda<span class="logo-accent">Pizza</span></span>
+          </span>
         </a>
         <p>Autentiske pizzaer og specialiteter på Amager siden 1994.</p>
         <div class="social-links">
