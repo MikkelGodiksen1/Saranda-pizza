@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 320" width="300" height="320">
+  <!-- Shadow -->
+  <ellipse cx="150" cy="305" rx="80" ry="12" fill="rgba(0,0,0,0.18)"/>
+
+  <!-- Pizza slice body (triangle with rounded top) -->
+  <path d="M38,20 Q150,-10 262,20 L180,290 Q150,310 120,290 Z" fill="#1a1a1a" stroke="#111" stroke-width="3"/>
+
+  <!-- Top arc / crust area -->
+  <path d="M38,20 Q150,-10 262,20 Q200,90 100,90 Z" fill="#c0392b"/>
+  <!-- Cheese dots on crust -->
+  <circle cx="90" cy="50" r="8" fill="rgba(255,255,255,0.7)"/>
+  <circle cx="130" cy="38" r="7" fill="rgba(255,255,255,0.7)"/>
+  <circle cx="170" cy="38" r="9" fill="rgba(255,255,255,0.7)"/>
+  <circle cx="210" cy="50" r="7" fill="rgba(255,255,255,0.7)"/>
+  <!-- Pepperoni on crust -->
+  <circle cx="108" cy="62" r="5" fill="#8B0000"/>
+  <circle cx="155" cy="52" r="6" fill="#8B0000"/>
+  <circle cx="198" cy="62" r="5" fill="#8B0000"/>
+
+  <!-- Phone number banner -->
+  <path d="M40,25 Q150,5 260,25 Q255,70 150,72 Q45,70 40,25 Z" fill="#1a1a1a" stroke="#333" stroke-width="1.5"/>
+  <text x="150" y="57" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="22" font-weight="900" fill="white" letter-spacing="2">32 54 43 07</text>
+
+  <!-- Middle banner / ribbon -->
+  <rect x="30" y="110" width="240" height="55" rx="4" fill="#1a1a1a" stroke="#111" stroke-width="2"/>
+  <!-- Green ribbon wings -->
+  <polygon points="30,115 55,137 30,160" fill="#27ae60"/>
+  <polygon points="270,115 245,137 270,160" fill="#27ae60"/>
+  <!-- SARANDA text -->
+  <text x="150" y="137" text-anchor="middle" font-family="Georgia, serif" font-size="26" font-weight="bold" fill="white" letter-spacing="3">SARANDA</text>
+
+  <!-- PIZZA banner -->
+  <path d="M55,168 L245,168 L250,175 L245,205 L55,205 L50,175 Z" fill="#1a1a1a" stroke="#111" stroke-width="2"/>
+  <text x="150" y="197" text-anchor="middle" font-family="Georgia, serif" font-size="30" font-weight="bold" fill="white" letter-spacing="5">PIZZA</text>
+
+  <!-- Bottom pizza tip area -->
+  <path d="M100,210 Q150,215 200,210 L165,285 Q150,300 135,285 Z" fill="#c0392b"/>
+  <!-- Cheese dots on bottom -->
+  <circle cx="130" cy="235" r="7" fill="rgba(255,255,255,0.7)"/>
+  <circle cx="155" cy="255" r="6" fill="rgba(255,255,255,0.7)"/>
+  <circle cx="172" cy="238" r="5" fill="rgba(255,255,255,0.7)"/>
+  <!-- Pepperoni bottom -->
+  <circle cx="148" cy="238" r="5" fill="#8B0000"/>
+</svg>
