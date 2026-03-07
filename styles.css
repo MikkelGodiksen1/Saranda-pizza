@@ -277,10 +277,16 @@ ul { list-style: none; }
   opacity: 1;
 }
 
-/* På mobil er video landskab i et portræt-vindue – vis top-center */
+/* På mobil: video er landskab (2:1) i portræt-vindue.
+   Brug contain så hele videoen vises uden zoom.
+   Mørk baggrund på hero udfylder tomt rum øverst/nederst. */
 @media (max-width: 768px) {
+  .hero {
+    background: #100500;
+  }
   .hero__video {
-    object-position: center 30%;
+    object-fit: contain;
+    object-position: center center;
   }
 }
 
