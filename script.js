@@ -2,6 +2,18 @@
    SARANDA PIZZA – Main Script
    ============================================================ */
 
+/* ── Hero video fade-in ───────────────────────────────────── */
+const heroVideo = document.querySelector('.hero__video');
+if (heroVideo) {
+  const showVideo = () => heroVideo.classList.add('is-loaded');
+  if (heroVideo.readyState >= 3) {
+    showVideo();
+  } else {
+    heroVideo.addEventListener('canplaythrough', showVideo, { once: true });
+    heroVideo.addEventListener('loadeddata', showVideo, { once: true });
+  }
+}
+
 /* ── Navbar scroll effect ─────────────────────────────────── */
 const navbar = document.getElementById('navbar');
 
