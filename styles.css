@@ -105,6 +105,19 @@ ul { list-style: none; }
   background: var(--accent-glow);
   transform: translateY(-2px);
 }
+.btn--wolt {
+  background: #009de0;
+  color: #fff;
+  border: 2px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.btn--wolt:hover {
+  background: #007ab8;
+  transform: translateY(-2px);
+  color: #fff;
+}
 
 .btn--lg { padding: 15px 32px; font-size: 1rem; }
 .btn--full { width: 100%; justify-content: center; }
