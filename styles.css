@@ -277,15 +277,10 @@ ul { list-style: none; }
   opacity: 1;
 }
 
-/* På mobil: video er 2:1 landskab i portræt-vindue.
-   contain viser hele videoen; overlay fader kanterne blødт ind. */
+/* På mobil: cover med justeret position (lidt over center) */
 @media (max-width: 768px) {
-  .hero {
-    background: #0d0400;
-  }
   .hero__video {
-    object-fit: contain;
-    object-position: center 55%;
+    object-position: center 30%;
   }
 }
 
@@ -300,21 +295,6 @@ ul { list-style: none; }
       rgba(10, 5, 0, 0.38) 50%,
       rgba(0, 0, 0, 0.50) 100%
     );
-}
-
-/* Mobil: ekstra vignette der fader top+bund ind i baggrunden */
-@media (max-width: 768px) {
-  .hero__video-overlay {
-    background:
-      linear-gradient(to bottom,
-        rgba(13, 4, 0, 0.92) 0%,
-        rgba(13, 4, 0, 0.35) 22%,
-        rgba(0, 0, 0, 0.15) 40%,
-        rgba(0, 0, 0, 0.15) 60%,
-        rgba(13, 4, 0, 0.35) 78%,
-        rgba(13, 4, 0, 0.92) 100%
-      );
-  }
 }
 
 .hero__bg {
