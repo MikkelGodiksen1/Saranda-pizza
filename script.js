@@ -2,15 +2,36 @@
    SARANDA PIZZA – Main Script
    ============================================================ */
 
-/* ── Hero video fade-in ───────────────────────────────────── */
+/* ── Hero video autoplay + fade-in ───────────────────────── */
 const heroVideo = document.querySelector('.hero__video');
 if (heroVideo) {
   const showVideo = () => heroVideo.classList.add('is-loaded');
+
+  // Prøv autoplay straks
+  const tryPlay = () => {
+    heroVideo.muted = true;
+    const p = heroVideo.play();
+    if (p !== undefined) {
+      p.catch(() => {
+        // Autoplay blokeret – start ved første brugerinteraktion
+        const startOnInteraction = () => {
+          heroVideo.play().catch(() => {});
+          document.removeEventListener('click', startOnInteraction);
+          document.removeEventListener('touchstart', startOnInteraction);
+          document.removeEventListener('scroll', startOnInteraction);
+        };
+        document.addEventListener('click', startOnInteraction, { once: true });
+        document.addEventListener('touchstart', startOnInteraction, { once: true });
+        document.addEventListener('scroll', startOnInteraction, { once: true });
+      });
+    }
+  };
+
   if (heroVideo.readyState >= 3) {
     showVideo();
+    tryPlay();
   } else {
-    heroVideo.addEventListener('canplaythrough', showVideo, { once: true });
-    heroVideo.addEventListener('loadeddata', showVideo, { once: true });
+    heroVideo.addEventListener('loadeddata', () => { showVideo(); tryPlay(); }, { once: true });
   }
 }
 
