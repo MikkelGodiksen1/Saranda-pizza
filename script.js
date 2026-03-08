@@ -163,3 +163,30 @@ document.querySelectorAll(
   el.style.transitionDelay = `${(i % 4) * 0.1}s`;
   revealObserver.observe(el);
 });
+
+/* ── Reviews drag-to-scroll (mobil) ──────────────────────── */
+const reviewsWrap = document.getElementById('reviews-track')?.parentElement;
+if (reviewsWrap) {
+  let isDown = false, startX, scrollLeft;
+  reviewsWrap.addEventListener('mousedown', e => {
+    isDown = true;
+    reviewsWrap.classList.add('is-dragging');
+    startX = e.pageX - reviewsWrap.offsetLeft;
+    scrollLeft = reviewsWrap.scrollLeft;
+  });
+  reviewsWrap.addEventListener('mouseleave', () => { isDown = false; reviewsWrap.classList.remove('is-dragging'); });
+  reviewsWrap.addEventListener('mouseup',    () => { isDown = false; reviewsWrap.classList.remove('is-dragging'); });
+  reviewsWrap.addEventListener('mousemove', e => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - reviewsWrap.offsetLeft;
+    reviewsWrap.scrollLeft = scrollLeft - (x - startX) * 1.5;
+  });
+}
+
+/* Reveal for review cards */
+document.querySelectorAll('.review-card').forEach((el, i) => {
+  el.classList.add('reveal');
+  el.style.transitionDelay = `${(i % 3) * 0.1}s`;
+  revealObserver.observe(el);
+});
